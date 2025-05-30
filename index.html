@@ -344,6 +344,7 @@
 }
 
 
+
   </style>
 </head>
 <body data-theme="dark">
@@ -362,20 +363,23 @@
       <a href="#contact">Contact</a>
       <a href="#" id="resumeBtn">Resume</a>
       <button class="theme-toggle" id="themeToggle">Light</button>
+
     </div>
   </nav>
 
-  <section class="fade-in intro" id="about">
+<section class="fade-in intro" id="about">
   <img src="meem3.jpg" alt="Profile image" style="transform: none !important;">
   <div class="intro-text">
-    <h1>Zannatul Naim</h1>
-    <p class="tagline">AI Explorer & Deep Learning Enthusiast</p>
-    <p>Hi! I’m a passionate AI researcher with a focus on GANs and medical imaging. Currently working on advanced skin disease classification projects.</p>
+    <h1 style="font-size: 3.5rem;">Zannatul Naim</h1>
+
+    <p class="tagline">AI & ML Enthusiast | Deep Learning | GAN | IoT Systems | Undergrad @ RUET</p>
+
 
     <!-- Resume Button (opens modal) -->
-    <button class="resume-btn" onclick="openModal()">Download Resume</button>
+    <button class="resume-btn" onclick="openModal()">Download Resume </button>
   </div>
 </section>
+
 
 <!-- Resume Modal -->
 <div id="resumeModal" class="modal">
@@ -383,50 +387,70 @@
     <span class="close" onclick="closeModal()">&times;</span>
     <h2>Download My Resume</h2>
     <p>Click the button below to download a copy of my resume in PDF format.</p>
-    <a href="Zannatul_Naim_Resume.pdf" download>
+    <a href="Meem_resume__With_pic___1_.pdf" download>
       <button class="download-btn">Download PDF</button>
     </a>
   </div>
 </div>
 
 
-  <section class="fade-in">
-    <h2>About Me</h2>
-    <div class="card about-me-flex">
-      <div>
-        <p>
-          A passionate, hardworking final year student at the department of Electronics & Telecommunication in RUET.  
-          With a deep interest in <strong>Image Processing</strong> and <strong>Deep Learning</strong>, I thrive on solving challenging problems with innovative AI solutions.
-        </p>
-        <p>
-          Ambitious and optimistic, I enjoy working within teams and leading initiatives that push boundaries in AI research.
-        </p>
-      </div>
+ <section class="fade-in" id="about-me">
+  <h2>About Me</h2>
+  <div class="card about-me-flex">
+    <div>
+      <p>
+        I am an enthusiastic and driven individual with a background in 
+        <strong>Electronics and Telecommunication Engineering</strong>, currently building my path in the 
+        <strong>IT and AI sectors</strong>. With a strong foundation in both hardware and software, 
+        I have worked on diverse academic and practical projects, including 
+        <strong>IoT systems</strong>, <strong>PCB design</strong>, and 
+        <strong>deep learning-based image processing</strong>.
+      </p>
+      <p>
+        My undergraduate thesis focused on <strong>skin disease classification using Generative Adversarial Networks (GANs)</strong>, 
+        where I applied synthetic data generation to enhance diagnostic accuracy—an experience that fueled my interest in 
+        <strong>AI for healthcare</strong>. I am also experienced in simulation tools like <strong>DSCH2</strong>, <strong>Microwind</strong>, 
+        and platforms such as <strong>Google Colab</strong> and <strong>Kaggle</strong>.
+      </p>
+      <p>
+        Passionate about learning and innovation, I enjoy taking on new challenges that allow me to grow and contribute meaningfully. 
+        I thrive in collaborative environments and am always eager to apply my skills to real-world problems that have a social impact.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
   <section class="fade-in" id="skills">
-    <h2>Skills</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Languages:</strong> Python, HTML</li>
-        <li><strong>Frameworks & Libraries:</strong> TensorFlow, Keras, Scikit-learn, OpenCV</li>
-        <li><strong>Tools:</strong> Pandas, NumPy, Jupyter Notebook, Google Colab, Kaggle</li>
-      </ul>
-    </div>
-  </section>
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, C, Embedded C, HTML</li>
+      <li><strong>Frameworks & Libraries:</strong> TensorFlow, Keras, Scikit-learn, OpenCV, Matplotlib, Seaborn</li>
+      <li><strong>Tools & Platforms:</strong> Google Colab, Kaggle, Jupyter Notebook, Arduino IDE, EasyEDA, DSCH2, Microwind</li>
+      <li><strong>Hardware & Simulation:</strong> ATmega328P, NodeMCU (ESP8266), MQ3 Gas Sensor, Proteus</li>
+      <li><strong>Other Skills:</strong> PCB Design, Image Processing, Data Analysis, IoT System Design</li>
+    </ul>
+  </div>
+</section>
+
 
   <section class="fade-in" id="projects">
     <h2>Projects</h2>
     <div class="card">
-      <h3>Skin Disease Classification using GAN</h3>
-      <p>Achieved 98.25% accuracy using a GAN model on the HAM10000 dataset.</p>
+      <h3>A GAN (Generative Adversarial Network)-Based Framework for Multi-Class Skin Disease Classification</h3>
+      <p>Developed a deep learning model using Generative Adversarial Networks (GANs) for multi-class skin disease classification on the HAM10000 dataset. The generator creates synthetic skin lesion images to augment and balance the dataset, while the discriminator simultaneously distinguishes between real and synthetic images and classifies them into disease categories. This approach addressed limitations of limited and imbalanced medical data, resulting in improved model performance and diagnostic accuracy. The project demonstrates the potential of GANs in medical imaging by supporting more reliable AI-assisted dermatological diagnostics.</p>
     </div>
     <div class="card">
-      <h3>IoT-Based Alcohol Detection System</h3>
+      <h3>Microcontroller Based Alcohol Detection Alert & Car Engine Blocking System</h3>
       <p>
-        ESP8266-based breath analyzer with alert system using LCD and LEDs.
+        Designed a microcontroller-based safety system using ATmega328P and MQ-3 gas sensor to detect alcohol from the driver’s breath. The system alerts passengers via LCD, buzzer, and LED, and automatically blocks the car engine if alcohol is detected. The engine resumes only when the driver is sober.
       </p>
+    </div>
+    <div class="card">
+      <h3>Smart Alcohol Detection and Alert System (IoT-Based)</h3>
+      <p>Designed and implemented an IoT-enabled alcohol detection system using an ESP8266 microcontroller, MQ3 gas sensor, and GPS module. The system detects elevated alcohol levels and responds by halting a motor and sending real-time alerts via ThingSpeak and IFTTT. It also logs sensor readings along with location data for remote monitoring and safety analysis, aiming to reduce risks associated with drunk driving.
+
+</p>
     </div>
   </section>
 
@@ -445,10 +469,10 @@
       <i class="fas fa-phone-alt"></i> +880 1737 155658
     </p>
     <p>
-      <a href="https://github.com/zannatulnaim" target="_blank" rel="noopener noreferrer" style="margin-right: 15px;">
+      <a href="https://github.com/meem55" target="_blank" rel="noopener noreferrer" style="margin-right: 15px;">
         <i class="fab fa-github"></i> GitHub
       </a>
-      <a href="https://linkedin.com/in/zannatulnaim" target="_blank" rel="noopener noreferrer">
+      <a href="https:/www.linkedin.com/in/zannatul-naim-7ba259368 " target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin"></i> LinkedIn
       </a>
     </p>
@@ -465,7 +489,7 @@
       <span class="close" id="modalClose">&times;</span>
       <h2>Download My Resume</h2>
       <p>
-        <a href="ZannatulNaim_Resume.pdf" download>Click here to download</a>
+        <a href="Meem_resume__With_pic___1_.pdf" download>Click here to download</a>
       </p>
     </div>
   </div>
